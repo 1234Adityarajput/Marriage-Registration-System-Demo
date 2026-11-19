@@ -4,6 +4,44 @@ A complete, modern PHP & MySQL web application for managing online marriage regi
 
 ---
 
+## 🔐 Quick Credentials & Login Details (ID & Password)
+
+### 👑 1. Admin Login Credentials
+| Field | Value / Details |
+| :--- | :--- |
+| **Admin Login URL** | [https://marriage-registration-system-demo.onrender.com/admin/login.php](https://marriage-registration-system-demo.onrender.com/admin/login.php) |
+| **Username** | `admin` |
+| **Password** | `admin123` |
+| **Role** | System Administrator (Full Access) |
+| **Features** | 1-Click "Fill Form" button & Eye Toggle on login screen |
+
+---
+
+### 👫 2. Client / User Login Credentials
+| Account | Email / Identifier | Password | Access URL |
+| :--- | :--- | :--- | :--- |
+| **Demo Client 1** | `slou@sample.com` | `slou123` *(or `admin123`)* | [Open Client Portal](https://marriage-registration-system-demo.onrender.com/login.php) |
+| **Demo Client 2** | `mwilliams@sample.com` | `mwilliams` *(or `admin123`)* | [Open Client Portal](https://marriage-registration-system-demo.onrender.com/login.php) |
+| **Admin Quick Bypass**| `admin` | `admin123` | [Open Client Portal](https://marriage-registration-system-demo.onrender.com/login.php) *(Auto-redirects to Admin)* |
+
+> [!TIP]
+> **Universal Auto-Fill**: Dono login screens par **"Fill Form"** button diya gaya hai. Us par click karte hi ID aur Password automatically fill ho jayenge!
+
+---
+
+### ☁️ 3. Aiven Cloud MySQL Database Credentials
+| Configuration Key | Value | Description |
+| :--- | :--- | :--- |
+| `DB_SERVER` *(or `DB_HOST`)* | `mysql-1a85412b-maheshchouhanmsk12-c513.a.aivencloud.com` | Aiven Cloud MySQL Host |
+| `DB_PORT` | `26284` | Aiven 5-digit custom port |
+| `DB_USERNAME` *(or `DB_USER`)* | `avnadmin` | Default Admin User |
+| `DB_PASSWORD` *(or `DB_PASS`)* | `[Your Aiven Service Password]` | Aiven Service Password from Console |
+| `DB_NAME` | `defaultdb` *(or `omrs_db`)* | Database Name |
+| `DB_SSL` | `true` | Required for Aiven SSL (`MYSQLI_CLIENT_SSL`) |
+| `PORT` | `10000` | Render internal container port |
+
+---
+
 ## 🚀 Live Application Endpoints & Repository
 
 | Resource | URL / Location |
@@ -14,51 +52,6 @@ A complete, modern PHP & MySQL web application for managing online marriage regi
 | **Client / Couple Portal** | `https://marriage-registration-system-demo.onrender.com/login.php` |
 | **New Couple Registration** | `https://marriage-registration-system-demo.onrender.com/registration.php` |
 | **1-Click DB Setup & Health** | `https://marriage-registration-system-demo.onrender.com/db_setup.php` |
-
----
-
-## 🔑 Login Credentials (Portal Access)
-
-### 👑 1. Administrator Portal
-Access full management features (review, approve or reject marriage applications, update client records, configure system details):
-- **URL**: `/admin/login.php`
-- **Username**: `admin`
-- **Password**: `admin123`
-- **Role**: Administrator (Full Access)
-
-*Note: The login screen features a 1-click **"Fill Form"** button and eye toggle for instant testing.*
-
----
-
-### 👫 2. Client / Couple Portal
-Access marriage registration dashboard, submit new marriage applications, view certificates and status:
-- **URL**: `/login.php`
-
-| Account | Email / Identifier | Password | Role |
-| :--- | :--- | :--- | :--- |
-| **Demo Client 1** | `slou@sample.com` | `slou123` *(or `admin123`)* | Client (Samantha Jane Lou) |
-| **Demo Client 2** | `mwilliams@sample.com` | `mwilliams` *(or `admin123`)* | Client (Mike Williams) |
-| **Direct Admin Bypass**| `admin` | `admin123` | Auto-routes to Admin Portal |
-
-> [!TIP]
-> **Universal Login Feature**: If you enter `admin` and `admin123` on the client login page (`login.php`), the system will automatically recognize your admin privileges and redirect you straight to the Admin Dashboard!
-
----
-
-## ☁️ Aiven Cloud MySQL Credentials & Environment Variables
-
-Configure these environment variables in your **Render Web Service Dashboard** (`Environment` tab):
-
-| Variable Name | Recommended Value | Description |
-| :--- | :--- | :--- |
-| `DB_SERVER` *(or `DB_HOST`)* | `mysql-1a85412b-maheshchouhanmsk12-c513.a.aivencloud.com` | Aiven Cloud MySQL Host |
-| `DB_PORT` | `26284` | Aiven 5-digit custom port |
-| `DB_USERNAME` *(or `DB_USER`)* | `avnadmin` | Default Admin User |
-| `DB_PASSWORD` *(or `DB_PASS`)* | `[Your Aiven Service Password]` | Aiven Service Password from Console |
-| `DB_NAME` | `defaultdb` *(or `omrs_db`)* | Database Name |
-| `DB_SSL` | `true` | Required for Aiven SSL (`MYSQLI_CLIENT_SSL`) |
-| `PORT` | `10000` | Render internal container port |
-| `BASE_URL` | *(Optional, auto-detected)* | e.g. `https://marriage-registration-system-demo.onrender.com` |
 
 ---
 
