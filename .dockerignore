@@ -1,0 +1,5 @@
+.git
+.github
+*.original
+push_to_github.bat
+.dockerignore
